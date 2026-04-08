@@ -8,8 +8,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(15, 20, 99);
-            margin: 0;
-            padding: 0;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,6 +21,7 @@
             height: 300px;
             padding: 20px;
             border: none;
+            
         }
         h2{
             text-align: center;
@@ -56,12 +56,33 @@
         button:hover{
             background-color: rgb(17, 230, 49);
         }
-        
+        .head{
+            color: azure;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: xx-large;
+
+        }
+        .link{
+            position: absolute;
+            right: 20px;
+            top: 3px;
+            color: azure;
+        }
         
     </style>
 
 </head>
 <body>
+    <nav class="link">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <h1 class="head">Facebook</h1>
     <div class="container">
         <h2>Sign Up</h2>
         <form action="">
