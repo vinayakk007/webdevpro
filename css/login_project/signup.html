@@ -7,20 +7,21 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(15, 20, 99);
+            background-color: rgb(34, 43, 164);            
+            margin: 0;
             
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         .container{
             background-color: rgb(225, 221, 221);
             border-radius: 8px;
-            margin-top: 200px;
+            margin-top: 100px;
             width: 400px;
             height: 300px;
             padding: 20px;
             border: none;
+            position: absolute;
+            left: 35%;
+            
             
         }
         h2{
@@ -38,11 +39,12 @@
             border-radius: 5px;
             padding: 10px;
             flex: 1;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            border: none;
         }
         .name{
             display: flex;
-            gap: 10px;
+            gap: 15px;
         }
         button{
             border-radius: 8px;
@@ -52,6 +54,7 @@
             color: aliceblue;
             font-size: 16px;
             cursor: pointer;
+            border: none;
         }
         button:hover{
             background-color: rgb(17, 230, 49);
@@ -60,22 +63,44 @@
             color: azure;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: xx-large;
+            left: 2%;
+            top: 1.5%;
+            display: flex;
+            justify-content: start;
+            padding: 2px;
+            margin-top: 0%;
 
         }
-        .link{
-            position: absolute;
-            right: 20px;
-            top: 3px;
-            padding: 20px;
+        .link{                       
+            padding: 15px;
             font-size: 15px;
+            background-color: rgb(5, 11, 89);
+            height: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            font-family: Arial, Helvetica, sans-serif;
         }
         nav a{
-            margin-right: 20px;
+            margin-right: 40px;
             color: aliceblue;
+            text-decoration: none;
+            position: relative;
+            padding: 3px;
+        }
+        nav a::after{
+            content: "";
+            position: absolute;
+            background-color: rgb(17, 151, 5);
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        nav a:hover::after{
+            transform: scaleX(1);
         }
 
         
@@ -83,12 +108,13 @@
 
 </head>
 <body>
-    <nav class="link">
+    <nav class="link">        
+        <h1 class="head">Facebook</h1>        
         <a href="#">Home</a>
         <a href="#">About Us</a>
         <a href="#">Contact Us</a>
     </nav>
-    <h1 class="head">Facebook</h1>
+    
     <div class="container">
         <h2>Sign Up</h2>
         <form action="">
